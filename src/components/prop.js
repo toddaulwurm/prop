@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './Prop.module.css';
     
     
 class PersonCard extends Component {
@@ -17,7 +18,7 @@ class PersonCard extends Component {
         // CHILDREN IS PROPPED HERE                   vvvvvvv
         const { firstName, lastName, hairColor, children} = this.props;
         return <div>
-                    <h1>{ lastName }, {firstName}</h1>
+                    <h1 className={styles.btn}>{ lastName }, {firstName}</h1>
                     <p>Age: {this.state.age}</p>
                     <p>Hair Color: {hairColor}</p>
 
